@@ -6,6 +6,7 @@ import { HomeComponent } from './home.component';
 import { LoginComponent } from './login/login.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { AutenticacaoService } from './autenticacao.service';
+import { MensagemModule } from '../componentes/mensagem/mensagem.module';
 
 
 @NgModule({
@@ -15,6 +16,7 @@ import { AutenticacaoService } from './autenticacao.service';
     FormsModule,
     HttpClientModule,
     ReactiveFormsModule,
+    MensagemModule,
     HomeRoutingModule
   ],
   exports: [HomeComponent],
