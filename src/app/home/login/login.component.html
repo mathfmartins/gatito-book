@@ -30,5 +30,7 @@
         *ngIf="campoSenha.invalid && campoSenha.touched"
         mensagem="Senha Obrigatória">
     </app-mensagem>
+    
     <button [disabled]="loginForm.invalid" type="submit" class="btn btn-primary btn-block">Login</button>
 </form>
+<p>Não é um usuário? <a [routerLink]="['novousuario']">Cadastrar</a></p>
