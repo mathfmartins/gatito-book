@@ -9,6 +9,7 @@ import { AutenticacaoService } from '../autenticacao.service';
   styleUrls: ['./login.component.css']
 })
 export class LoginComponent implements OnInit {
+  
   usuario = '';
   senha = '';
 

@@ -8,6 +8,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { AutenticacaoService } from './autenticacao.service';
 import { MensagemModule } from '../componentes/mensagem/mensagem.module';
 import { NovoUsuarioComponent } from './novo-usuario/novo-usuario.component';
+import { NovoUsuarioService } from './novo-usuario/novo-usuario.service';
 
 
 @NgModule({
@@ -22,7 +23,8 @@ import { NovoUsuarioComponent } from './novo-usuario/novo-usuario.component';
   ],
   exports: [HomeComponent],
   providers: [
-    AutenticacaoService
+    AutenticacaoService,
+    NovoUsuarioService
   ]
 })
 export class HomeModule { }
