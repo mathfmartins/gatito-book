@@ -37,6 +37,11 @@
                         novoUsuarioForm.get('userName')?.touched" 
             mensagem="Usuário deve ser informado">
         </app-mensagem>
+
+        <app-mensagem 
+            *ngIf="novoUsuarioForm.get('userName')?.errors?.minusculo"
+            mensagem="Usuário deve ser em letra minúscula">
+        </app-mensagem>
     </div>
     
 
